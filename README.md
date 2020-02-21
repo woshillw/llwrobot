@@ -1,10 +1,20 @@
 # llwrobot
 a simple ros robot
 
-#before you use, make sure install [ros_control](https://wiki.ros.org/ros_control)  
+#before you use, make sure install [ros](http://wiki.ros.org/)
+
+#then install [ros_control](https://wiki.ros.org/ros_control)  
 `sudo apt-get install ros-melodic-ros-control ros-melodic-ros-controllers`
 
-#first use  
+#first build project
+`mkdir ~/catkin_ws/src -p`
+`cd ~/catkin_ws/src`
+`catkin_init_workspace`
+`cd ~/catkin_ws`
+`catkin_make`
+`source ~/catkin_ws/devel/setup.bash`
+
+#second use  
 `roslaunch llwrobot_description llwrobot_gazebo.launch`
 
 #then  
