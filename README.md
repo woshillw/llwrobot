@@ -12,7 +12,7 @@ a simple ros robot
 `catkin_init_workspace`  
 `cd ~/catkin_ws`  
 `catkin_make`  
-`echo "source /home/gc/catkin_ws/devel/setup.bash" >> ~/.bashrc`  
+`echo "~/catkin_ws/devel/setup.bash" >> ~/.bashrc`  
 `source ~/.bashrc`  
 
 #second use  
