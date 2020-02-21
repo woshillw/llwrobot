@@ -12,7 +12,8 @@ a simple ros robot
 `catkin_init_workspace`  
 `cd ~/catkin_ws`  
 `catkin_make`  
-`source ~/catkin_ws/devel/setup.bash`  
+`echo "source /home/gc/catkin_ws/devel/setup.bash" >> ~/.bashrc`  
+`source ~/.bashrc`  
 
 #second use  
 `roslaunch llwrobot_description llwrobot_gazebo.launch`
