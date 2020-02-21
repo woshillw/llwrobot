@@ -1,7 +1,7 @@
 # llwrobot
 a simple ros robot
 
-#before you use, make sure you install [ros_control](https://wiki.ros.org/ros_control)  
+#before you use, make sure install [ros_control](https://wiki.ros.org/ros_control)  
 `sudo apt-get install ros-melodic-ros-control ros-melodic-ros-controllers`
 
 #first use  
