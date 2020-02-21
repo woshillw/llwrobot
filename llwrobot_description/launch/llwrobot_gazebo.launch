@@ -1,0 +1,17 @@
+<launch> 
+    <include file="$(find gazebo_ros)/launch/empty_world.launch" />
+
+    <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find llwrobot_description)/urdf/llwrobot_description.xacro'" />
+
+    <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+        args="-urdf -model llwrobot -param robot_description"/>
+
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/>
+
+    <!-- <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" output="screen">
+        <param name="publish_frequency" type="double" value="50"/>
+    </node> -->
+
+    <include file="$(find llwrobot_control)/launch/llwrobot_control.launch" />
+
+</launch>
